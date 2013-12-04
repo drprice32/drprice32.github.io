@@ -2,6 +2,6 @@
 
 http://sanfranciscouppercervical.com
 
-All information © copyright 2013- Anjanette Price
+All information © copyright 2013- Anjannette Price
 
 Developed by Matt Bower (http://webbower.com)
