@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]> <html class="no-js oldie"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ page.title }} &raquo; {{ site.name }}</title>
+	<meta name="description" content="{{ page.meta.description }}">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+	<header role="banner">
+		<h1><a href="/">{{ site.name }}</a></h1>
+	</header>
+
+	<nav role="navigation">
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/about/">About</a></li>
+			<li><a href="/what-we-do/">What We Do</a></li>
+			<li><a href="/case-studies/">Case Studies</a></li>
+			<li><a href="/testimonials/">Testimonials</a></li>
+		</ul>
+	</nav>
+
+	<main role="main">
+		<h1>{{ page.title }}</h1>
+
+		{{ content }}
+	</main>
+
+	<footer role="contentinfo" class="vcard">
+		<div class="adr">
+			Emergence Healing Arts Studio<br>
+			<span class="street-address">{{ site.adr.street }}</span><br>
+			<span class="locality">{{ site.adr.city }}</span>
+			<span class="region">{{ site.adr.state }}</span>
+			<span class="postal-code">{{ site.adr.zip }}</span>
+		</div>
+		<div class="tel">
+			<span class="type">Work</span>
+			<span class="value">{{ site.tel.areacode }}</span>-<span class="value">{{ site.tel.prefix }}</span>-<span class="value">{{ site.tel.suffix }}</span>
+		</div>
+		<div class="email">
+			<span class="type">Work</span>
+			<a class="value" href="mailto:{{ site.email }}">{{ site.email }}</a>
+		</div>
+		
+		<small>
+			&copy; 2014 by <a class="fn org url" href="site.url">{{ site.name }}</a>
+		</small>
+	</footer>
+
+</body>
+</html>

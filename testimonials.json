@@ -1,0 +1,8 @@
+---
+---
+[{% for testimonial in site.data.testimonials %}
+	{
+		"quote": "{{ testimonial.quote | json }}",
+		"cite": "{{ testimonial.cite | json }}"
+	}{% unless forloop.last %},{% endunless %}
+{% endfor %}]
