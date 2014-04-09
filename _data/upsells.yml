@@ -1,9 +1,10 @@
 - title: Upsell 1
-  desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt."
+  readmore: "Read Case Study"
   link: "#"
 
 - title: Upsell 2
-  desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
   link: "#"
 
 - title: Upsell 3
@@ -11,6 +12,6 @@
   link: "#"
 
 - title: Upsell 4
-  desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  desc: "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   link: "#"
 

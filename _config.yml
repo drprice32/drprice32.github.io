@@ -1,4 +1,8 @@
 name: "San Francisco Upper Cervical Chiropractic"
+markdown: redcarpet
+pygments: false
+exclude: [ Gemfile , Gemfile.lock , CNAME , README.md ]
+
 adr:
   street: 4052 18th St
   city: San Francisco
@@ -11,5 +15,5 @@ tel:
 email: drprice@sanfranciscouppercervical.com
 url: http://sanfranciscouppercervical.com/
 
-markdown: redcarpet
-pygments: false
+defaults:
+  readmore: "Read More"

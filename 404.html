@@ -1,0 +1,30 @@
+---
+title: Page Not Found
+---
+<!DOCTYPE html>
+<!--[if lte IE 8]> <html class="no-js oldie"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ page.title }} &raquo; {{ site.name }}</title>
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+	<header role="banner">
+		<h1><a href="/">{{ site.name }}</a></h1>
+	</header>
+
+	<main role="main">
+		<h1>{{ page.title }}</h1>
+
+		<p>You appear to be lost.</p>
+	</main>
+
+	{% include footer.html %}
+
+</body>
+</html>

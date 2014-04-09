@@ -13,11 +13,37 @@ body {
 	max-width: 800px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+
+blockquote p {
+	font-family: serif;
+	font-style: italic;
+}
+
+blockquote cite {
+	font-style: normal;
+}
+
+figure {
+	margin: 0;
+}
+
+figure img {
+	display: block;
+}
+
+figcaption p {
+	margin-top: 0;
+}
+
 [role=banner],
 [role=navigation],
 [role=main],
 [role=contentinfo] {
 	margin: 1em 0;
+	clear: both;
 }
 
 [role=banner] {}
@@ -43,6 +69,10 @@ body {
 	margin-right: 5px;
 }
 
+[role=navigation] .current {
+	font-weight: bold;
+}
+
 [role=main] {}
 
 [role=contentinfo] {}
@@ -50,6 +80,29 @@ body {
 .vcard .tel .type,
 .vcard .email .type {
 	display: none;
+}
+
+.img-left {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+	
+.img-right {
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.img-full,
+.img-full img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.img-full figcaption {
+	text-align: center;
 }
 
 @media only screen and (min-width:500px) {
