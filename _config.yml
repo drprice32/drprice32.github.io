@@ -1,10 +1,7 @@
 name: "San Francisco Upper Cervical Chiropractic"
 markdown: redcarpet
-highlighter: false
-exclude: [ Gemfile , Gemfile.lock , CNAME , README.md ]
-
-sass:
-  style: :nested
+pygment: false
+exclude: [ Gemfile , Gemfile.lock , CNAME , README.md, urls.txt ]
 
 adr:
   street: 4052 18th St

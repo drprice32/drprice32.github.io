@@ -130,6 +130,31 @@ img {
     margin: 0 auto;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+
+blockquote p {
+	font-family: serif;
+	font-style: italic;
+}
+
+blockquote cite {
+	font-style: normal;
+}
+
+figure {
+	margin: 0;
+}
+
+figure img {
+	display: block;
+}
+
+figcaption p {
+	margin-top: 0;
+}
+
 [role=banner],
 [role=navigation],
 [role=main],
