@@ -5,34 +5,46 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ page.title }} &raquo; {{ site.name }}</title>
-	<meta name="description" content="{{ page.meta.description }}">
+    <meta name="description" content="{{ page.meta.description }}">
     <meta name="viewport" content="width=device-width">
 
+    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/main.css">
+    <!-- <link rel="stylesheet" href="/css/dev.css"> -->
 </head>
-<body>
+<body id="{{ page.pagename }}">
 
-	<header role="banner">
-		<h1><a href="/">{{ site.name }}</a></h1>
-	</header>
+    <nav role="navigation">
+        <a href="#main" id="skip">Jump to Content</a>
+        {% include dev-nav.html %}
+    </nav>
 
-	<nav role="navigation">
-		<ul>
-			<li><a href="/"{% if page.url == "/index.html" %} class="current"{% endif %}>Home</a></li>
-			<li><a href="/about/"{% if page.url contains "/about/" %} class="current"{% endif %}>About</a></li>
-			<li><a href="/what-we-do/"{% if page.url contains "/what-we-do/" %} class="current"{% endif %}>What We Do</a></li>
-			<li><a href="/case-studies/"{% if page.url contains "/case-studies/" %} class="current"{% endif %}>Case Studies</a></li>
-			<li><a href="/testimonials/"{% if page.url contains "/testimonials/" %} class="current"{% endif %}>Testimonials</a></li>
-		</ul>
-	</nav>
+    <header role="banner">
+        <h1>
+            <img src="/img/logo-sfucc.png" alt="{{ site.name }} logo" class="logo" width="65" height="64">
+            <a href="/">San Francisco <span>Upper Cervical</span> Chiropractic</a>
+        </h1>
+        {% if page.pagename == "home" %}
+        <figure>
+            <img src="img/img-banner-mobile.png" alt="">
+            <figcaption>
+                <p>Through the use of state-of-the-art equipment &amp; analysis, we will help you achieve your health goals!</p>
+            </figcaption>
+        </figure>
+        
+        {% endif %}
+    </header>
 
-	<main role="main">
-		<h1>{{ page.title }}</h1>
+    <main role="main" id="main">
+        {% if page.pagename != "home" %}
+        <h1>{{ page.title }}</h1>
+        {% endif %}
 
-		{{ content }}
-	</main>
+        {{ content }}
+    </main>
 
-	{% include footer.html %}
+    {% include footer.html %}
 
+    <script src="/js/sfucc.js"></script>
 </body>
 </html>

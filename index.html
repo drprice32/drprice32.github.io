@@ -1,21 +1,37 @@
 ---
 layout: default
 title: Welcome
+pagename: home
 ---
 
 <article>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div id="intro">
+        <h1>{{ page.title }}</h1>
+
+        <p>If you have been suffering from back pain in San Francisco, don't wait another second to begin your road to recovery! At San Francisco Upper Cervical Chiropractic, our chiropractic techniques can assist patients with the rediscovery of health and wellness that had been previously known but long lost.</p>
+    </div>
+
+    <div id="makeapptcta">
+        <h2>Book your upper cervical <span>appointment today</span></h2>
+
+        <ul>
+            <li><a href="mailto:{{site.email}}">Email</a></li>
+            <li><a href="tel:{{ site.tel.areacode }}-{{ site.tel.prefix }}-{{ site.tel.suffix }}">{{ site.tel.areacode }}-{{ site.tel.prefix }}-{{ site.tel.suffix }}</a></li>
+        </ul>
+    </div>
 </article>
 
-<aside class="testimonial">
-	{% assign first_testimonal = site.data.testimonials | first %}
-	{% include testimonial.html testimonial=first_testimonal %}
-	
-	<p><a href="/testimonials/">See all testimonials</a></p>
+<aside class="upsell items-{{ site.data.upsells | size }}">
+    {% for upsell in site.data.upsells %}
+    {% include upsell.html upsell=upsell %}
+    {% endfor %}
 </aside>
 
-<aside class="upsell">
-	{% for upsell in site.data.upsells %}
-	{% include upsell.html upsell=upsell %}
-	{% endfor %}
+<aside class="testimonial">
+    <h1>Testimonials</h1>
+
+    {% assign first_testimonal = site.data.testimonials | first %}
+    {% include testimonial.html testimonial=first_testimonal %}
+
+    <a href="/testimonials/" class="more">See all testimonials</a>
 </aside>

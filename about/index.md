@@ -4,7 +4,7 @@ title: About
 ---
 
 <figure class="img-left">
-	<img src="http://placekitten.com/200/200" alt="Photo of Dr. Anjannette Price">
+	<img src="http://placekitten.com/200/200" width="200" height="200" alt="Photo of Dr. Anjannette Price">
 	<figcaption>
 		<p>Dr. Anjannette Price</p>
 	</figcaption>

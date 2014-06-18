@@ -1,23 +1,28 @@
 <footer role="contentinfo" class="vcard">
-	<div class="adr">
-		Emergence Healing Arts Studio<br>
-		<span class="street-address">{{ site.adr.street }}</span><br>
-		<span class="locality">{{ site.adr.city }}</span>
-		<span class="region">{{ site.adr.state }}</span>
-		<span class="postal-code">{{ site.adr.zip }}</span>
-	</div>
-	<div class="tel">
-		<span class="type">Work</span>
-		<span class="value">{{ site.tel.areacode }}</span>-<span class="value">{{ site.tel.prefix }}</span>-<span class="value">{{ site.tel.suffix }}</span>
-	</div>
-	<div class="email">
-		<span class="type">Work</span>
-		<a class="value" href="mailto:{{ site.email }}">{{ site.email }}</a>
-	</div>
-	
-	<small>
-		&copy; 2014 by <a class="fn org url" href="site.url">{{ site.name }}</a>
-	</small>
-    
-    <p class="attribution">Designed by <a href="http://www.renatadesign.com/" target="_blank">Renata Miles</a> and coded by <a href="http://webbower.com" target="_blank">Matt Bower</a></p>
+    <div class="inner">
+        <div class="tel icon-phone">
+            <span class="type">Work</span>
+            <span class="value">{{ site.tel.areacode }}-{{ site.tel.prefix }}-{{ site.tel.suffix }}</span>
+        </div>
+
+        <div class="email">
+            <span class="type">Work</span>
+            <a class="value" href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </div>
+
+        <div class="adr">
+            <h2>Office Location</h2>
+            Emergence Healing Arts Studio<br>
+            <span class="street-address">{{ site.adr.street }}</span>
+            <span class="locality">{{ site.adr.city }}</span>
+            <span class="region">{{ site.adr.state }}</span>
+            <span class="postal-code">{{ site.adr.zip }}</span>
+        </div>
+
+        <small>
+            &copy; 2014 by <a class="fn org url" href="site.url">{{ site.name }}</a>
+        </small>
+
+        <p class="attribution">Designed by <a href="http://www.renatadesign.com/" target="_blank">Renata Miles</a> and coded by <a href="http://webbower.com" target="_blank">Matt Bower</a></p>
+    </div>
 </footer>

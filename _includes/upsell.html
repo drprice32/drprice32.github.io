@@ -1,5 +1,5 @@
 <article>
 	<h1><a href="{{ include.upsell.link }}">{{ include.upsell.title }}</a></h1>
 	<p>{{ include.upsell.desc }}</p>
-	<a href="{{ include.upsell.link }}">{% if include.upsell.readmore %}{{ include.upsell.readmore }}{% else %}{{ site.defaults.readmore }}{% endif %}</a>
+	<a href="{{ include.upsell.link }}" class="more">{% if include.upsell.readmore %}{{ include.upsell.readmore }}{% else %}{{ site.defaults.readmore }}{% endif %}</a>
 </article>

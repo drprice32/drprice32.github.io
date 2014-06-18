@@ -1,6 +1,6 @@
 # A sample Gemfile
 source "https://rubygems.org"
 
-# gem "rails"
-gem "jekyll", "~> 1.5"
-gem "compass", "~> 0.12"
+gem "github-pages"
+# gem "jekyll", "~> 2.0"
+# gem "compass", "~> 0.12"
