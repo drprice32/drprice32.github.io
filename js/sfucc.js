@@ -71,5 +71,7 @@
         }
 
         initMobileNav();
+        
+        window.addEventListener('resize', function() { console.log('Resizing'); }, false);
     }, false);
 })();
