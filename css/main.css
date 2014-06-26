@@ -213,7 +213,6 @@ figcaption p {
 [role=banner] figcaption p {
     color: #B3AFAC;
     font: italic 16px/1.25 Georgia, "Times New Roman", Times, serif;
-    margin: 0;
 }
 
 [role=navigation] {
@@ -405,14 +404,22 @@ figcaption p {
 }
 
 #makeapptcta {
-    background: #DACDB7;
-    padding-top: 10px;
+    background: url(../img/bg-cta-peelup.png) repeat-x;
+    background:
+      url(../img/bg-cta-peelup-lft.png) no-repeat,
+      url(../img/bg-cta-peelup-rgt.png) top right no-repeat,
+      url(../img/bg-cta-peelup.png) repeat-x content-box;
+    padding: 0 26px 0 15px;
+    min-height: 100px;
+    max-width: 350px;
+    overflow: auto;
+    margin: 0 auto;
 }
 
 #makeapptcta h2 {
     text-transform: capitalize;
-    font: italic 18px/30px Georgia, "Times New Roman", Times, serif;
-    margin: 0 10px 10px;
+    font: italic 18px/24px Georgia, "Times New Roman", Times, serif;
+    margin: 7px 0;
 }
 
 #makeapptcta h2 span {
@@ -427,25 +434,28 @@ figcaption p {
     list-style: none;
     margin: 0;
     padding: 0;
-    border-top: 1px solid #476f25;
+/*    border-top: 1px solid #476f25;*/
 }
 
 #makeapptcta li {
     -webkit-flex: 1;
     flex: 1;
-    text-align: center;
     font-size: 16px;
+    line-height: 1.0;
     font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 #makeapptcta li:first-child {
-    border-right: 1px solid #476f25;
+/*    border-right: 1px solid #476f25;*/
 }
 
 #makeapptcta li a {
     text-decoration: none;
     display: block;
-    padding: 5px 0;
+}
+
+#makeapptcta .icon-phone:before {
+  vertical-align: middle;
 }
 
 #home .upsell {
@@ -500,6 +510,7 @@ figcaption p {
 
     [role=navigation] ul {
         padding: 10px 0;
+        display: -webkit-flex;
         display: flex;
         list-style: none;
         background: none;
